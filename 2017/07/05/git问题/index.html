@@ -18,7 +18,7 @@ $ git push origin masterThe authenticity of host ‘git.coding.net (XXX)’ can�
 <meta property="og:description" content="问题描述1前很久的时候，上个月？？？给项目建了个仓库，方便我实验室电脑和自己电脑同步，然后遇到了一些问题（以前也这样过），所以mark下，提醒自己
 
 $ git push origin masterThe authenticity of host ‘git.coding.net (XXX)’ can’t be established.RSA key fingerprint is SHA256:jo">
-<meta property="og:updated_time" content="2017-07-05T08:57:04.000Z">
+<meta property="og:updated_time" content="2017-07-05T08:58:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git问题">
 <meta name="twitter:description" content="问题描述1前很久的时候，上个月？？？给项目建了个仓库，方便我实验室电脑和自己电脑同步，然后遇到了一些问题（以前也这样过），所以mark下，提醒自己
@@ -173,13 +173,12 @@ $ git push origin masterThe authenticity of host ‘git.coding.net (XXX)’ can�
       
         <h3 id="问题描述1"><a href="#问题描述1" class="headerlink" title="问题描述1"></a>问题描述1</h3><font style="color: rgb(172,168,167)">前很久的时候，上个月？？？给项目建了个仓库，方便我实验室电脑和自己电脑同步，然后遇到了一些问题（以前也这样过），所以mark下，提醒自己</font>
 
-<p><code><br>$ git push origin master<br>The authenticity of host ‘git.coding.net (XXX)’ can’t be established.<br>RSA key fingerprint is SHA256:jok3FH7q5LJ6qvE7iPNehBgXRw51ErE77S0Dn+Vg/Ik.<br>Are you sure you want to continue connecting (yes/no)? </code></p>
-<p>直接输入yes 就行</p>
-<p><a href="https://coding.net/help/doc/git/ssh-key.html" target="_blank" rel="external">参考</a></p>
-<h3 id="问题描述2"><a href="#问题描述2" class="headerlink" title="问题描述2"></a>问题描述2</h3><p><code><br>! [rejected] master -&gt; master (fetch first)<br>error: failed to push some refs to ‘git@git.coding.net:xxx’<br>hint: Updates were rejected because the remote contains work that you do<br>hint: not have locally. This is usually caused by another repository pushing<br>hint: to the same ref. You may want to first integrate the remote changes<br>hint: (e.g., ‘git pull …’) before pushing again.<br>hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.</code></p>
-<a id="more"></a>
+<p><code>$ git push origin master<br>The authenticity of host ‘git.coding.net (XXX)’ can’t be established.<br>RSA key fingerprint is SHA256:jok3FH7q5LJ6qvE7iPNehBgXRw51ErE77S0Dn+Vg/Ik.<br>Are you sure you want to continue connecting (yes/no)? </code></p>
+<p>直接输入yes 就行<br><a id="more"></a><br><a href="https://coding.net/help/doc/git/ssh-key.html" target="_blank" rel="external">参考</a></p>
+<h3 id="问题描述2"><a href="#问题描述2" class="headerlink" title="问题描述2"></a>问题描述2</h3><p><code>! [rejected] master -&gt; master (fetch first)<br>error: failed to push some refs to ‘git@git.coding.net:xxx’<br>hint: Updates were rejected because the remote contains work that you do<br>hint: not have locally. This is usually caused by another repository pushing<br>hint: to the same ref. You may want to first integrate the remote changes<br>hint: (e.g., ‘git pull …’) before pushing again.<br>hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.</code></p>
 <p>原因是没有同步远程仓库<br>git pull origin master<br>同步一下</p>
-<p>一般来说是成功的。但是我的报错了。原因是，我是两个不同的仓库。<br><code><br>$ git pull origin master<br>From git.coding.net:xxx</code></p>
+<p>一般来说是成功的。但是我的报错了。原因是，我是两个不同的仓库。</p>
+<p><code>$ git pull origin master<br>From git.coding.net:xxx</code></p>
 <ul>
 <li>branch master -&gt; FETCH_HEAD<br>fatal: refusing to merge unrelated histories</li>
 </ul>
@@ -403,11 +402,11 @@ $ git push origin masterThe authenticity of host ‘git.coding.net (XXX)’ can�
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color5">hexo</a>
+                <a href="javascript:void(0)" class="color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="color4">git</a>
+                <a href="javascript:void(0)" class="color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
